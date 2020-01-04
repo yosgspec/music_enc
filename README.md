@@ -14,7 +14,7 @@ https://chocolatey.org/packages/ffmpeg
 Chocolatyについては下記記事などを参照してください。  
 https://qiita.com/konta220/items/95b40b4647a737cb51aa  
 
-なお、C#版の実行には.NET Core 3以上のRuntimeが必要です。
+なお、C#版の実行には.NET Core 3以上のRuntimeが必要です。  
 https://dotnet.microsoft.com/download
 
 # ライセンス
