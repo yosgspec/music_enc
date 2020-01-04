@@ -1,4 +1,6 @@
 # 音楽ファイル変換
+![music_encs](https://github.com/yosgspec/music_enc/blob/master/music_encs.png)
+
 音楽ファイルを簡単に変換するソフト。  
 FFmpegをバックエンドとして利用しています。  
 
@@ -34,6 +36,6 @@ https://github.com/pyinstaller/pyinstaller/wiki/FAQ
 
 # 作成者
 YOS G-spec  
-[ブログ](http://yosgspec.blog103.fc2.com/)  
-[twitter](https://twitter.com/yosgspec)  
+[ブログ](http://yosgspec.blog103.fc2.com/) 
+[twitter](https://twitter.com/yosgspec) 
 [メールアドレス](yos.g.spec@gmail.com)  
