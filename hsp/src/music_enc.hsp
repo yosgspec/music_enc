@@ -1,0 +1,51 @@
+#packopt name "music_enc"
+#packopt xsize 260
+#packopt ysize 110
+#cmpopt varinit 1
+
+#include "user32.as"
+
+#module
+#deffunc MainWindow
+	screen 0,260,110,0
+	color $33,$99,$FF
+	boxf
+	title "音楽ファイル変換"
+	font "Meiryo UI",14,0
+	objmode 2
+	
+	objsize 60,30
+	pos 190,10
+	button gosub "参照",*viewSelect@
+	
+	pos 10,10
+	sdim inputFile@
+	input inputFile@,180,30
+	inputFile_id@=stat
+	
+	rdo=1,0,0,0
+	pos 10,40
+	chkbox "MP3",rdo(0)
+	mp3_id@=stat
+	sendmsg objinfo(stat,2),$F4,$9
+	pos 70,40
+	chkbox "AAC",rdo(1)
+	aac_id@=stat
+	sendmsg objinfo(stat,2),$F4,$9
+	pos 130,40
+	chkbox "OGG",rdo(2)
+	ogg_id@=stat
+	sendmsg objinfo(stat,2),$F4,$9
+	pos 190,40
+	chkbox "WAV",rdo(3)
+	wav_id@=stat
+	sendmsg objinfo(stat,2),$F4,$9
+	
+	objsize 240,30
+	pos 10,70
+	button gosub "変換",*musicConvert@
+return
+#global
+
+MainWindow: stop
+#include "music_enc.as"

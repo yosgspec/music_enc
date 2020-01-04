@@ -1,0 +1,11 @@
+{
+	"name":"music_enc",
+	"version":"1.0.0",
+	"main":"music_enc.html",
+	"window":{
+		"title":"音楽ファイル変換",
+		"resizable":false,
+		"width":270,
+		"height":110
+	}
+}

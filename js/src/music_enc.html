@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang=ja>
+	<head>
+		<meta charset="utf-8">
+		<style type="text/css">
+		body{
+			font-family:"Meiryo UI";
+			font-size:16px;
+			color:#000099;
+			background-color:#3399FF;
+			margin:15px 6px 10px 6px;
+			padding:0px;
+		}
+		input[type=file],button{
+			color:#000099;
+			background-color:#AACCFF;
+			height:25px;
+			width:100%;
+		}
+		button{
+			font-size:16px;
+		}
+		</style>
+	</head>
+	<body>
+		<div>
+			<input type=file id=inputFile accept="audio/wav,audio/mp3,audio/mp4,audio/ogg">
+		</div>
+		<div style="margin:6px 0px;">
+			<label><input type=radio name=rdo id=mp3_rdo checked>MP3</label>
+			<label><input type=radio name=rdo id=aac_rdo>AAC</label>
+			<label><input type=radio name=rdo id=ogg_rdo>OGG</label>
+			<label><input type=radio name=rdo id=wav_rdo>WAV</label>
+		</div>
+		<div>
+			<button onclick="musicConvert();">変換</button>
+		</div>
+		<script type="text/javascript" src="music_enc.js"></script>
+	</body>
+</html>
