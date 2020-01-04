@@ -28,7 +28,7 @@ http://dev.onionsoft.net/trac/openhsp/wiki/RuleLicense
 ## バイナリ配布用ライセンス
 ### NW.js
 MITライセンス他(含有モジュール除く)  
-生成したされたバイナリにライセンスファイルが含有されています。  
+生成されたバイナリにライセンスファイルが含有されています。  
 
 ### PyInstaller
 生成したexeへのライセンス追加は不要とのことです。  
